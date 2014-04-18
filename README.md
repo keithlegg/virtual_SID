@@ -24,7 +24,7 @@ Here is the pinout of my setup.
 
 
 SID        Atmega328
----------------------
+
 RST          NC
 02/CLK       PC0
 R/W          PC1
