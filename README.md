@@ -22,20 +22,16 @@ I havent implemented interrupts yet , this is all a big test.
 
 Here is the pinout of my setup.
 
+RST NC
+02/CLK PC0
+R/W PC1
+CS PC2
 
-SID        Atmega328
-
-RST          NC
-02/CLK       PC0
-R/W          PC1
-CS           PC2
-
-ADDR0        PB0
-ADDR1        PB1
-ADDR2        PB2
-ADDR3        PB3
-ADDR4        PB4
-
+ADDR0 PB0
+ADDR1 PB1
+ADDR2 PB2
+ADDR3 PB3
+ADDR4 PB4
 
 PORTD will be my 8bit data bus when I get there. Because of the SID using 5 bit address, I mask off the top 3 most signifigant 
 bits with a mask on PINB. (PINB & 0x1f ); 
